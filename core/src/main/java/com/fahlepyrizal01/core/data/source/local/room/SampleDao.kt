@@ -18,20 +18,20 @@ interface SampleDao {
 
     //region INSERT
     @Insert(onConflict = REPLACE)
-    suspend fun insertAllData(data: List<DataSampleEntity>): Boolean
+    suspend fun insertAllData(data: List<DataSampleEntity>)
 
     @Insert(onConflict = REPLACE)
-    suspend fun insertOneData(data: DataSampleEntity): Boolean
+    suspend fun insertOneData(data: DataSampleEntity)
     //endregion
 
     //region UPDATE
     @Update
-    fun updateData(data: DataSampleEntity): Boolean
+    fun updateData(data: DataSampleEntity)
     //endregion
 
     //region DELETE
     @Delete
-    fun deleteData(id: String): Boolean
+    fun deleteData(data: DataSampleEntity)
     //endregion
 
 }

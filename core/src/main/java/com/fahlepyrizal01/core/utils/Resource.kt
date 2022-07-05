@@ -1,6 +1,6 @@
 package com.fahlepyrizal01.core.utils
 
-sealed class Resource<T>(val data: T? = null, private val message: String? = null) {
+sealed class Resource<T>(val data: T? = null, val message: String? = null) {
 
     private var loadingHasBeenHandled = false
     private var successHasBeenHandled = false
