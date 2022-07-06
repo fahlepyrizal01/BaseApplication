@@ -15,3 +15,6 @@ dependencyResolutionManagement {
 rootProject.name = "Base Application"
 include ':app'
 include ':core'
+include ':feature-home'
+include ':api-game'
+include ':feature-favorite'
